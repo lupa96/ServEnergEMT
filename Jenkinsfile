@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Lanzar curl') {
             steps{
-                sh'''curl -XPUT --request GET "http://127.0.0.1:8000/free_spaces/" --data-raw "{\"time\":7200,\"period\":75}"
+                sh'''curl -XPUT --request GET "http://127.0.0.1:8000/free_spaces/" --data-raw "{'time':7200,'period':75}"
                 '''
             }
         }
