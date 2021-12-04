@@ -1,6 +1,6 @@
 
 pipeline {
-    agent { label "master" }
+    agent { label "principal" }
     stages{
         stage('Launch environment') {
             steps{
