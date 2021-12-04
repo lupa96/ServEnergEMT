@@ -10,6 +10,7 @@ def check_attribute(body, attribute):
 
 def check_body(body, type: str):
     if type == "free_spaces":
+        print("body: " + body)
         body = json.loads(body)
         check_attribute(body, "time")
         check_attribute(body, "period")
